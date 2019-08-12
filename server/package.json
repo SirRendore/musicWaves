@@ -1,0 +1,17 @@
+{
+  "name": "musicwaves",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "http": "^0.0.0",
+    "lodash": "^4.17.15",
+    "morgan": "^1.9.1"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "nodemon ./bin/www"
+  }
+}
