@@ -41,7 +41,7 @@ class Login extends Component {
         }
     }
     render() {
-        return <div>Make me pretty baby <br />
+        return <div>Make me pretty baby  <br />
             {!this.state.token && (
                 <a
                     className="btn btn--loginApp-link"
