@@ -4,7 +4,7 @@ import React, { Component } from "react";
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 const clientId = "c636e8428c5f45e8b3113a81e1aeb176";
-const redirectUri = "http://localhost:3000/callback";
+const redirectUri = "http://localhost:3000/";
 const scopes = [
     "user-read-currently-playing",
     "user-read-playback-state",
@@ -41,14 +41,14 @@ class Login extends Component {
         }
     }
     render() {
-        return <div>Hello <br/>
+        return <div>Make me pretty baby <br />
             {!this.state.token && (
                 <a
                     className="btn btn--loginApp-link"
                     href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`}
                 >
-                    Login to Spotify
-        </a>
+                    <button>Login to Spotify</button>
+                </a>
             )}
         </div>
     }
